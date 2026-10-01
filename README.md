@@ -10,20 +10,105 @@ this extension adds CAS/LMO analysis and a staged notebook interface. See
 [Attribution and licensing](#attribution-and-licensing) for the original citation
 and license information.
 
-## Getting started
+## Quick installation
 
-Run commands from the repository root in a dedicated Python environment:
+For users already familiar with Python and Git:
 
-```console
-python -m pip install -r requirements.txt
-python -m pip install jupyterlab
-jupyter lab mfh_cas_lmo.ipynb
-```
+`git clone https://github.com/Wangwei1w/TB-CAS-LMO.git`
 
-Select the notebook kernel associated with that environment. The current tests
-were run with Python 3.12. Dependencies include NumPy, SciPy, pandas,
-Matplotlib, ASE, PythTB, igor-tools, and scikit-learn. `requirements.txt` pins
-PythTB to **1.8.0**, matching the legacy `tb_model` interface used by this code.
+`cd TB-CAS-LMO`
+
+`python -m venv .venv`
+
+`.venv\Scripts\Activate.ps1`
+
+`python -m pip install --upgrade pip`
+
+`python -m pip install -r requirements.txt`
+
+`python -m pip install jupyterlab`
+
+`jupyter lab mfh_cas_lmo.ipynb`
+
+## System requirements
+
+A Python 3 environment is required. The current TB-CAS-LMO workflow has been tested with **Python 3.12**.
+
+Required Python libraries include:
+
+- `numpy`, `scipy`, `pandas`, `matplotlib`
+- `ase`
+- `pythtb` (**1.8.0**)
+- `scikit-learn`
+- `igor-tools`
+
+The required libraries are listed in `requirements.txt` and can be installed automatically with `pip`.
+
+JupyterLab is recommended for running the main notebook `mfh_cas_lmo.ipynb`.
+
+## Installation
+
+Open **Windows PowerShell** and move to the directory where you want to install the project, for example:
+
+`cd C:\Users\YOUR_USERNAME\Documents`
+
+Clone the repository:
+
+`git clone https://github.com/Wangwei1w/TB-CAS-LMO.git`
+
+Enter the repository directory:
+
+`cd TB-CAS-LMO`
+
+Create a dedicated Python environment:
+
+`python -m venv .venv`
+
+Activate it:
+
+`.venv\Scripts\Activate.ps1`
+
+Upgrade `pip`:
+
+`python -m pip install --upgrade pip`
+
+Install the required libraries:
+
+`python -m pip install -r requirements.txt`
+
+Install JupyterLab:
+
+`python -m pip install jupyterlab`
+
+Start the main notebook:
+
+`jupyter lab mfh_cas_lmo.ipynb`
+
+JupyterLab should open automatically in a web browser.
+
+If the notebook does not use the same Python environment, install and register a Jupyter kernel:
+
+`python -m pip install ipykernel`
+
+`python -m ipykernel install --user --name tb-cas-lmo --display-name "Python (TB-CAS-LMO)"`
+
+Then select `Python (TB-CAS-LMO)` as the notebook kernel.
+
+## Optional: Visual Studio Code
+
+Visual Studio Code is not required, but it can be used to edit the code and run `mfh_cas_lmo.ipynb`.
+
+If using VS Code, install the **Python** and **Jupyter** extensions and select the `.venv` environment.
+
+## Running the project later
+
+After the initial installation, open PowerShell and run:
+
+`cd C:\path\to\TB-CAS-LMO`
+
+`.venv\Scripts\Activate.ps1`
+
+`jupyter lab mfh_cas_lmo.ipynb`
 
 The main notebook uses `geom/608M4.xyz`, a 44-site structure. Its two manual
 hopping/onsite cells are special-purpose examples: **skip them for this
