@@ -17,7 +17,7 @@ Run commands from the repository root in a dedicated Python environment:
 ```console
 python -m pip install -r requirements.txt
 python -m pip install jupyterlab
-jupyter lab mfh_test.ipynb
+jupyter lab mfh_cas_lmo.ipynb
 ```
 
 Select the notebook kernel associated with that environment. The current tests
@@ -225,8 +225,7 @@ for further computation.
 
 | File | Purpose |
 | --- | --- |
-| [mfh_test.ipynb](mfh_test.ipynb) | Main TB and staged CAS notebook |
-| [mfh_examples.ipynb](mfh_examples.ipynb) | Independent advanced examples with their own inputs |
+| [mfh_cas_lmo.ipynb](mfh_cas_lmo.ipynb) | Main TB and staged CAS notebook |
 | [cas_stages.py](tb_mean_field_hubbard/cas_stages.py) | Interactive solver and stage methods |
 | [CAS.py](tb_mean_field_hubbard/CAS.py) | CAS, RDM, natural-orbital, and spin-correlation kernels |
 | [LMO.py](tb_mean_field_hubbard/LMO.py) | Localization, mixing, hopping, and bridge-channel kernels |
