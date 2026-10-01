@@ -4,6 +4,4 @@ pandas
 matplotlib
 ase
 pythtb==1.8.0
-igor-tools
-scikit-learn
 pytest

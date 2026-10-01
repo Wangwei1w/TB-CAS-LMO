@@ -39,8 +39,6 @@ Required Python libraries include:
 - `numpy`, `scipy`, `pandas`, `matplotlib`
 - `ase`
 - `pythtb` (**1.8.0**)
-- `scikit-learn`
-- `igor-tools`
 
 The required libraries are listed in `requirements.txt` and can be installed automatically with `pip`.
 
