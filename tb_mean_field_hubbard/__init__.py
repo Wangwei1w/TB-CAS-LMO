@@ -1,5 +1,5 @@
 from .mfh import MeanFieldHubbardModel
-from .utils import create_itx
+#from .utils import create_itx
 
 __version__ = "2.1.0"
 from .cas_workflow import CASWorkflowParameters, PairAnalysis, run_cas_workflow

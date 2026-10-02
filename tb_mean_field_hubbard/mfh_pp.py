@@ -65,7 +65,7 @@ class MFHPostProcess:
         extent[1] = x_arr[-1] + dx
         extent[3] = y_arr[-1] + dx
 
-        orb_map = np.zeros((len(x_arr), len(y_arr)), dtype=np.complex)
+        orb_map = np.zeros((len(x_arr), len(y_arr)), dtype=np.complex128)
 
         for at, coef in zip(self.mfh.ase_geom, evec):
             p = at.position
