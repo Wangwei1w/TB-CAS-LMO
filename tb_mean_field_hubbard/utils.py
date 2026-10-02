@@ -164,9 +164,9 @@ def make_evec_plot(ax, atoms, neighbor_list, data, title=None, filename=None):
     ax.set_ylim([ymin, ymax])
     ax.set_title(title)
 
-    if filename is not None:
-        plt.savefig('%s.png' % filename, dpi=300, bbox_inches='tight')
-        plt.savefig('%s.pdf' % filename, bbox_inches='tight',transparent=True)
+    #if filename is not None:
+        #plt.savefig('%s.png' % filename, dpi=300, bbox_inches='tight')
+        #plt.savefig('%s.pdf' % filename, bbox_inches='tight',transparent=True)
 
 def make_spin_plot(ax, atoms, neighbor_list, data, wid, pointsize):
     ax.set_aspect('equal')
@@ -195,7 +195,7 @@ def make_spin_plot(ax, atoms, neighbor_list, data, wid, pointsize):
     ax.set_xlim([xmin, xmax])
     ax.set_ylim([ymin, ymax])
     #ax.set_title('spin density')
-    plt.savefig('%s.pdf' % pointsize, bbox_inches='tight',transparent=True)
+    #plt.savefig('%s.pdf' % pointsize, bbox_inches='tight',transparent=True)
     
 ### ------------------------------------------------------------------------------
 ### GRID ORBITALS
