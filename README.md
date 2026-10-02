@@ -39,6 +39,8 @@ Required Python libraries include:
 - `numpy`, `scipy`, `pandas`, `matplotlib`
 - `ase`
 - `pythtb` (**1.8.0**)
+- `scikit-learn`
+- `igor-tools`
 
 The required libraries are listed in `requirements.txt` and can be installed automatically with `pip`.
 
@@ -128,7 +130,6 @@ advance and run every cell without review.
 | Canonical-MO CAS | TB energies and orbitals | `active_indices`, `n_elec_param`, `n_roots_param`, `U_site_param` | `solve_canonical_cas` |
 | Root report | CAS spectrum | `report_roots` | `report_roots` |
 | Natural orbitals | Root reports | `root_param`, `cutoff_param` | `natural_orbitals` |
-| Canonical spin correlations | CAS roots | `correlation_roots` | `canonical_correlations` |
 | CAS-LMO localization | NO plots and occupations | `selected_no_indices`, root, localization settings | `localize` |
 | CAS-LMO observables | Localized orbitals | `root_param` | `observables` |
 | CAS-LMO spin correlations | CAS roots and LMO basis | `correlation_roots`, `connected` | `spin_correlations` |
@@ -139,7 +140,7 @@ advance and run every cell without review.
 | MIX hopping downfolding | MIX plots and observables | MIX target pair, mediating subspace, `E_ref` | `downfold` |
 | MIX bridge eigenchannels | MIX downfolding results | Same MIX target/mediating partition | `channels` |
 | Optional MIX spin correlations | CAS roots and MIX basis | `correlation_roots`, `connected` | `spin_correlations` |
-| Optional MFH comparison | MIX basis | Existing MFH occupations | `mfh_observables` |
+
 
 All methods after the initial solver belong to the returned `cas_session`.
 All orbital, site, and root indices are **zero-based**. NO indices refer to the
